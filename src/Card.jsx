@@ -9,10 +9,10 @@ function Card({ pelicula, comida }) {
           Estos son tus gustos!
         </Typography>
         <Typography variant="body1" color="textSecondary" gutterBottom>
-          Película favorita: {pelicula}
+          Película favorita: <span style={{ color: '#2196F3' }}>{pelicula}</span>
         </Typography>
         <Typography variant="body1" color="textSecondary">
-          Comida favorita: {comida}
+          Comida favorita: <span style={{ color: '#2196F3' }}>{comida}</span>
         </Typography>
       </CardContent>
     </MaterialCard>
