@@ -1,11 +1,21 @@
-//Este componente deberia recibir por props y mostrar en pantalla la informacion
-//que envia el usuario
+import React from 'react';
+import { Card as MaterialCard, CardContent, Typography } from '@mui/material';
 
-function Card() {
+function Card({ pelicula, comida }) {
   return (
-    <div>
-      <h2>Esto es un componente</h2>
-    </div>
+    <MaterialCard style={{ marginTop: 20 }}>
+      <CardContent>
+        <Typography variant="h5" component="h2" gutterBottom>
+          Estos son tus gustos!
+        </Typography>
+        <Typography variant="body1" color="textSecondary" gutterBottom>
+          Película favorita: {pelicula}
+        </Typography>
+        <Typography variant="body1" color="textSecondary">
+          Comida favorita: {comida}
+        </Typography>
+      </CardContent>
+    </MaterialCard>
   );
 }
 
